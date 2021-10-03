@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>震源 &mdash; 地震“学”科研入门教程</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex/" />
+    <link rel="search" title="搜索" href="../../search/" />
+    <link rel="next" title="地震波" href="../seismic-wave/" />
+    <link rel="prev" title="地震学基础" href="../basis/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../" class="icon icon-home"> 地震“学”科研入门教程
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+    
+              <p class="caption" role="heading"><span class="caption-text">计算机基础</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../computer/operating-system/">选择操作系统</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../computer/setup/">配置操作系统</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../computer/linux101/">Linux 入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../computer/commands/">Linux 常用命令</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../computer/editor/">编辑器</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">编程基础</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../programming/introduction/">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programming/languages/">编程语言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programming/compile/">编译与链接</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programming/version-control/">版本控制</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">地震学基础</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction/">简介</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../basis/">地震学基础</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">震源</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">震源表示</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">地震三要素</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../seismic-wave/">地震波</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../seismograph/">地震仪</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../distance-angle/">距离和角度</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../data/">地震学数据</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/">常用软件</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">地震学实践</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../exercises/introduction/">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../exercises/download/">资料下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../exercises/process/">资料处理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../exercises/analysis/">资料分析</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">实践经验</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../best-practices/introduction/">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../best-practices/file-organization/">文件管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../best-practices/software-installation/">软件安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../best-practices/backup/">数据备份</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../best-practices/zsh/">Zsh 及其配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../best-practices/vscode/">VSCode 使用教程</a></li>
+</ul>
+
+
+    
+        <p class="caption">
+            <span class="caption-text">外部链接</span>
+        </p>
+        <ul>
+            
+                <li class="toctree-l1"><a href="https://seismo-learn.org/"><i class="fa fa-home"></i> 地震“学”主站</a></li>
+            
+                <li class="toctree-l1"><a href="https://github.com/seismo-learn/seismology101"><i class="fa fa-github fa-fw"></i> 网站源码</a></li>
+            
+                <li class="toctree-l1"><a href="https://seismo-learn.org/contributing/"><i class="fa fa-edit fa-fw"></i> 贡献指南</a></li>
+            
+                <li class="toctree-l1"><a href="https://github.com/seismo-learn/seismology101/discussions"><i class="fa fa-comments fa-fw"></i> 参与讨论</a></li>
+            
+        </ul>
+    
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">地震“学”科研入门教程</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../basis/">地震学基础</a> &raquo;</li>
+      <li>震源</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/seismo-learn/seismology101/blob/main/source/seismology/seismic-source.rst" class="fa fa-github"> 编辑本页</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>震源<a class="headerlink" href="#id1" title="永久链接至标题"></a></h1>
+<dl class="field-list simple">
+<dt class="field-odd">本节贡献者</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://github.com/core-man">姚家园</a>（作者）、
+<a class="reference external" href="https://me.seisman.info/">田冬冬</a>（审稿）</p>
+</dd>
+<dt class="field-even">最近更新日期</dt>
+<dd class="field-even"><p>2021-05-31</p>
+</dd>
+<dt class="field-odd">预计阅读时间</dt>
+<dd class="field-odd"><p>5 分钟</p>
+</dd>
+</dl>
+<hr class="docutils" />
+<p>任何产生能被地震仪记录到的地球机械振动的源都可以称为震源（seismic source），可能是地震、火山喷发、海浪、台风或飓风、人工爆炸、交通活动等。本节介绍震源的基础概念。</p>
+<section id="id2">
+<h2>震源表示<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>本小节尚未开始编写。</p>
+</div>
+</section>
+<section id="id3">
+<h2>地震三要素<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
+<p>对于地震，人们最关心的基本参数有三个（俗称<strong>地震三要素</strong>），即时间、地点、强度（简称<strong>时空强</strong>）：</p>
+<ul class="simple">
+<li><p>时间：地震发生时间（origin time），常采用协调世界时（即 Coordinated Universal Time，简写 UTC）</p></li>
+<li><p>地点：地震发生位置（hypocenter），其向上垂直投影到地面的位置称为震中（epicenter）</p></li>
+<li><p>强度：地震的大小，常用震级（magnitude）表示</p></li>
+</ul>
+<p>横向上看，地震大部分发生在不同板块的边界处。板块内部也有一些地震发生。</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../../_images/earthquake-distribution.jpg"><img alt="五年内 4 级以上地震的全球分布" src="../../_images/earthquake-distribution.jpg" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-text">五年内 4 级以上地震的全球分布。
+引自 <a class="reference external" href="https://www.iris.edu/hq/inclass/fact-sheet/why_do_earthquakes_happen">Why Do Earthquakes Happen?</a>。</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
+</figcaption>
+</figure>
+<p>垂向上看，地震主要发生在脆性地壳中。在 300 公里以上，地震数目整体上随着深度增加而减少。300 公里以下，地震数目略有增加。最大的地震深度约为 700 多公里。</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../../_images/earthquake-depth.jpg"><img alt="地震数目和和深度关系" src="../../_images/earthquake-depth.jpg" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-text">1964-2001 年全球 5.2 级以上地震的年发生率和震源深度的关系。
+引自《<a class="reference external" href="https://doi.org/10.1017/CBO9781107297562">Deep Earthquakes</a>》图 4.3。</span><a class="headerlink" href="#id5" title="永久链接至图片"></a></p>
+</figcaption>
+</figure>
+<p>震级越大的地震，数目越少。震级增加一级，地震释放的能量增加 32 倍。一般 4 级以下的地震破坏能力较小，一些重要的全球地震目录也只收录 5 级以上的地震。</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../../_images/earthquake-energy.jpg"><img alt="地震的震级、频率以及释" src="../../_images/earthquake-energy.jpg" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">地震的震级、频率以及释放能量的经验关系。
+引自 <a class="reference external" href="https://www.iris.edu/hq/inclass/fact-sheet/how_often_do_earthquakes_occur">How Often Do Earthquakes Occur?</a>。</span><a class="headerlink" href="#id6" title="永久链接至图片"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../basis/" class="btn btn-neutral float-left" title="地震学基础" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../seismic-wave/" class="btn btn-neutral float-right" title="地震波" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2020–2021, seismo-learn.
+      <span class="lastupdated">最后更新于 2021 年 10 月 03 日.
+      </span></p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">sphinx_rtd_theme 主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

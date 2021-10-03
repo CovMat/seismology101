@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VSCode 使用教程 &mdash; 地震“学”科研入门教程</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex/" />
+    <link rel="search" title="搜索" href="../../search/" />
+    <link rel="prev" title="Zsh 及其配置" href="../zsh/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../" class="icon icon-home"> 地震“学”科研入门教程
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+    
+              <p class="caption" role="heading"><span class="caption-text">计算机基础</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../computer/operating-system/">选择操作系统</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../computer/setup/">配置操作系统</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../computer/linux101/">Linux 入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../computer/commands/">Linux 常用命令</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../computer/editor/">编辑器</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">编程基础</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../programming/introduction/">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programming/languages/">编程语言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programming/compile/">编译与链接</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programming/version-control/">版本控制</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">地震学基础</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../seismology/introduction/">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../seismology/basis/">地震学基础</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../seismology/data/">地震学数据</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../seismology/software/">常用软件</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">地震学实践</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../exercises/introduction/">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../exercises/download/">资料下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../exercises/process/">资料处理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../exercises/analysis/">资料分析</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">实践经验</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction/">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../file-organization/">文件管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software-installation/">软件安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../backup/">数据备份</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../zsh/">Zsh 及其配置</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">VSCode 使用教程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">安装中文语言包</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">连接远程计算机</a></li>
+</ul>
+</li>
+</ul>
+
+
+    
+        <p class="caption">
+            <span class="caption-text">外部链接</span>
+        </p>
+        <ul>
+            
+                <li class="toctree-l1"><a href="https://seismo-learn.org/"><i class="fa fa-home"></i> 地震“学”主站</a></li>
+            
+                <li class="toctree-l1"><a href="https://github.com/seismo-learn/seismology101"><i class="fa fa-github fa-fw"></i> 网站源码</a></li>
+            
+                <li class="toctree-l1"><a href="https://seismo-learn.org/contributing/"><i class="fa fa-edit fa-fw"></i> 贡献指南</a></li>
+            
+                <li class="toctree-l1"><a href="https://github.com/seismo-learn/seismology101/discussions"><i class="fa fa-comments fa-fw"></i> 参与讨论</a></li>
+            
+        </ul>
+    
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">地震“学”科研入门教程</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../" class="icon icon-home"></a> &raquo;</li>
+      <li>VSCode 使用教程</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/seismo-learn/seismology101/blob/main/source/best-practices/vscode.rst" class="fa fa-github"> 编辑本页</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="vscode">
+<h1>VSCode 使用教程<a class="headerlink" href="#vscode" title="永久链接至标题"></a></h1>
+<dl class="field-list simple">
+<dt class="field-odd">本节贡献者</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://github.com/core-man">姚家园</a>（作者）、
+<a class="reference external" href="https://me.seisman.info/">田冬冬</a>（审稿）</p>
+</dd>
+<dt class="field-even">最近更新日期</dt>
+<dd class="field-even"><p>2021-09-28</p>
+</dd>
+<dt class="field-odd">预计花费时间</dt>
+<dd class="field-odd"><p>30 分钟</p>
+</dd>
+</dl>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>本节正在编写中，尚未完成。</p>
+</div>
+<section id="id1">
+<h2>安装中文语言包<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
+<p>VS Code 的界面默认显示语言是英文，可以安装中文语言包。点击菜单栏“查看”后选择“命令面板”（快捷键：<kbd class="kbd docutils literal notranslate">Ctrl</kbd> + <kbd class="kbd docutils literal notranslate">Shift</kbd> + <kbd class="kbd docutils literal notranslate">p</kbd>），接着输入“configure display language”并按 <kbd class="kbd docutils literal notranslate">Enter</kbd> 键，然后选择“安装其他语言”。这时界面会跳转到插件商店并自动搜索其他语言，一般第一个就是中文，即 “Chinese (Simplified) Language Pack for Visual Studio Code”，点击安装就行了。安装完之后自动重启，界面就变成中文了。</p>
+</section>
+<section id="id2">
+<h2>连接远程计算机<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<p>编辑远程计算机文件的传统方法是先使用 ssh 命令登录到远程计算机，然后在远程计算机中使用 vim 编辑器编辑文件。</p>
+<p>现在，我们可以借助 VS Code 扩展包 Remote - SSH，使用 VS Code 编辑远程文件，这极大地提高编辑效率。这里简要介绍如何安装和使用该扩展包，可以参考 VS Code
+官方文档 <a class="reference external" href="https://code.visualstudio.com/docs/remote/ssh">ssh</a> 了解详细用法。</p>
+<ol class="arabic">
+<li><p>安装 Remote - SSH 扩展包</p>
+<p>在“扩展”中，搜索“Remote - SSH”，点击安装。</p>
+<p>安装完之后，左下角导航栏会多一个类似 <code class="docutils literal notranslate"><span class="pre">&gt;&lt;</span></code> 的远程连接图标。之后可以通过点击该图标来使用该扩展包。</p>
+</li>
+<li><p>配置远程计算机的 SSH 主机</p>
+<p>一般情况下，远程计算机已安装 SSH 服务器，本地计算机已安装 SSH 客户端。我们还需要配置基于密钥的认证，这也是 VS Code 官方推荐的认证方式。以下命令假设本地和远程计算机都是 Linux 或 macOS 系统，远程计算机的 IP 地址是
+192.168.1.100，用户在远程计算机中的用户名是 seismo-learn。可以参考 <a class="reference external" href="https://wangdoc.com/ssh/key.html">SSH 教程：SSH 密钥登录</a>
+进一步学习更详细的配置过程。</p>
+<p>本地计算机下，运行以下命令生成 SSH 密钥:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ssh-keygen -t rsa -f ~/.ssh/id_rsa-remote-ssh
+</pre></div>
+</div>
+<p>该命令产生的一对 SSH 密钥分别位于 <code class="file docutils literal notranslate"><span class="pre">~/.ssh/id_rsa-remote-ssh</span></code> 和
+<code class="file docutils literal notranslate"><span class="pre">~/.ssh/id_rsa-remote-ssh.pub</span></code> 文件中。前者是私钥文件，不能泄露；后者是公钥文件，需要告诉远程计算机。</p>
+<p>运行以下命令将公钥复制到远程计算机中（需用户输入远程计算机的密码）:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ssh-copy-id -i ~/.ssh/id_rsa-remote-ssh.pub seismo-learn@192.168.1.100
+</pre></div>
+</div>
+<p>该命令会把本地的公钥以追加的方式复制到远程计算机的 <code class="file docutils literal notranslate"><span class="pre">~/.ssh/authorized_keys</span></code>
+文件中，并给远程计算机中的用户家目录、<code class="file docutils literal notranslate"><span class="pre">~/.ssh</span></code> 目录以及 <code class="file docutils literal notranslate"><span class="pre">~/.ssh/authorized_keys</span></code>
+设置合适的权限。若远程计算机或本地计算机是 Windows 系统，请参考
+<a class="reference external" href="https://code.visualstudio.com/docs/remote/troubleshooting#_quick-start-using-ssh-keys">Quick start: Using SSH keys</a>
+进行配置。</p>
+<p>在终端中输入以下命令，验证是否配置是否成功（即可以登录远程计算机）:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ssh seismo-learn@192.168.1.100
+</pre></div>
+</div>
+</li>
+<li><p>编辑远程文件</p>
+<p>点击左下角的远程连接图标，选择“Remote-SSH: Connect to Host”，输入
+<a class="reference external" href="mailto:seismo-learn&#37;&#52;&#48;192&#46;168&#46;1&#46;100">seismo-learn<span>&#64;</span>192<span>&#46;</span>168<span>&#46;</span>1<span>&#46;</span>100</a> 便可使用 VS Code 编辑远程计算机中的文件了。</p>
+</li>
+<li><p>退出远程连接</p>
+<p>文件编辑完毕后，选择菜单栏“文件”中的“关闭远程连接”，或者直接关闭 VS Code，就可以退出远程连接。</p>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>如果需要经常连接远程计算机，可以使用 SSH 配置文件。</p>
+<p>在活动栏中选择“远程资源管理器”，点击“配置”后选择 <code class="file docutils literal notranslate"><span class="pre">~/.ssh/config</span></code>
+配置文件，按照以下格式添加相关信息到该文件中:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Host</span> <span class="n">seismology</span>
+    <span class="n">User</span> <span class="n">seismo</span><span class="o">-</span><span class="n">learn</span>
+    <span class="n">HostName</span> <span class="mf">192.168.1.100</span>
+    <span class="n">IdentityFile</span> <span class="o">~/.</span><span class="n">ssh</span><span class="o">/</span><span class="n">id_rsa</span><span class="o">-</span><span class="n">remote</span><span class="o">-</span><span class="n">ssh</span>
+</pre></div>
+</div>
+<p>第一列是关键词，如 Host、User、HostName、IdentityFile，第二列是对应的值。seismology 是用户自定义的远程主机标识，其他三个值同上文。可以按照该格式，向该文件中添加多个远程计算机。</p>
+<p>点击左下角的远程连接图标，选择“Remote-SSH: Connect to Host”，点击“seismology”就可以登录远程计算机了。也可以通过“远程资源管理器”，点击“seismology”登录远程计算机。</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>如果远程计算机使用的 Shell 是 Bash，本地计算机是 Zsh，可能遇到无法启动
+VS Code 的终端的问题。此时，需要修改一下配置文件以正确启动终端。</p>
+<p>打开命令面板，输入 Remote-SSH: Settings，搜索 terminal.integrated.shell.linux，将 “/bin/zsh” 改为 “/bin/bash” 即可。详情请参考
+<a class="reference external" href="https://github.com/microsoft/vscode-remote-release/issues/38">microsoft/vscode-remote-release issues #38</a></p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../zsh/" class="btn btn-neutral float-left" title="Zsh 及其配置" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2020–2021, seismo-learn.
+      <span class="lastupdated">最后更新于 2021 年 10 月 03 日.
+      </span></p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">sphinx_rtd_theme 主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

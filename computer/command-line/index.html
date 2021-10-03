@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>命令行 &mdash; 地震“学”科研入门教程</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex/" />
+    <link rel="search" title="搜索" href="../../search/" />
+    <link rel="next" title="文件操作" href="../file-operations/" />
+    <link rel="prev" title="Linux 入门" href="../linux101/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../" class="icon icon-home"> 地震“学”科研入门教程
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+    
+              <p class="caption" role="heading"><span class="caption-text">计算机基础</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/">选择操作系统</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../setup/">配置操作系统</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../linux101/">Linux 入门</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">命令行</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">命令行与图形界面</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">终端</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shell">Shell</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../file-operations/">文件操作</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shell/">Shell 基础</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../environment-variable/">环境变量</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/">Linux 常用命令</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editor/">编辑器</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">编程基础</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../programming/introduction/">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programming/languages/">编程语言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programming/compile/">编译与链接</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programming/version-control/">版本控制</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">地震学基础</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../seismology/introduction/">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../seismology/basis/">地震学基础</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../seismology/data/">地震学数据</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../seismology/software/">常用软件</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">地震学实践</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../exercises/introduction/">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../exercises/download/">资料下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../exercises/process/">资料处理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../exercises/analysis/">资料分析</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">实践经验</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../best-practices/introduction/">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../best-practices/file-organization/">文件管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../best-practices/software-installation/">软件安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../best-practices/backup/">数据备份</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../best-practices/zsh/">Zsh 及其配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../best-practices/vscode/">VSCode 使用教程</a></li>
+</ul>
+
+
+    
+        <p class="caption">
+            <span class="caption-text">外部链接</span>
+        </p>
+        <ul>
+            
+                <li class="toctree-l1"><a href="https://seismo-learn.org/"><i class="fa fa-home"></i> 地震“学”主站</a></li>
+            
+                <li class="toctree-l1"><a href="https://github.com/seismo-learn/seismology101"><i class="fa fa-github fa-fw"></i> 网站源码</a></li>
+            
+                <li class="toctree-l1"><a href="https://seismo-learn.org/contributing/"><i class="fa fa-edit fa-fw"></i> 贡献指南</a></li>
+            
+                <li class="toctree-l1"><a href="https://github.com/seismo-learn/seismology101/discussions"><i class="fa fa-comments fa-fw"></i> 参与讨论</a></li>
+            
+        </ul>
+    
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">地震“学”科研入门教程</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../linux101/">Linux 入门</a> &raquo;</li>
+      <li>命令行</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/seismo-learn/seismology101/blob/main/source/computer/command-line.rst" class="fa fa-github"> 编辑本页</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>命令行<a class="headerlink" href="#id1" title="永久链接至标题"></a></h1>
+<dl class="field-list simple">
+<dt class="field-odd">本节贡献者</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://github.com/core-man">姚家园</a>（作者）、
+<a class="reference external" href="https://me.seisman.info/">田冬冬</a>（审稿）</p>
+</dd>
+<dt class="field-even">最近更新日期</dt>
+<dd class="field-even"><p>2021-03-01</p>
+</dd>
+<dt class="field-odd">预计花费时间</dt>
+<dd class="field-odd"><p>20 分钟</p>
+</dd>
+</dl>
+<hr class="docutils" />
+<section id="id2">
+<h2>命令行与图形界面<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<p>地震学科研中，大部分时间使用的是命令行界面（<strong>CLI</strong>, <strong>C</strong>ommand <strong>L</strong>ine <strong>I</strong>nterface），有时也使用图形界面（<strong>GUI</strong>, <strong>G</strong>raph <strong>U</strong>ser <strong>I</strong>nterface）。命令行基本以操作键盘为主，图形界面一般同时操作鼠标和键盘。图形界面上手简单，各种常用功能显式可见，但是推荐在日常科研中使用和掌握命令行，原因如下：</p>
+<ul class="simple">
+<li><p>命令行更加高效。操作键盘比在键盘和鼠标之间来回切换更快</p></li>
+<li><p>命令行操作可编写成脚本，并重复使用，而图形界面下操作重复的时间成本较高</p></li>
+<li><p>命令行有时是唯一的选择。例如，登录远程服务器时，很少有图形化界面可供使用</p></li>
+<li><p>图形界面占用更多的系统资源</p></li>
+</ul>
+<p>近几年，一些图形界面工具发展迅速，有时使用图形界面会更方便。例如，
+<a class="reference external" href="https://code.visualstudio.com/">Visual Studio Code</a>
+是当前最流行的图形界面文本编辑器之一，使用其进行编程或编辑文本十分高效。</p>
+</section>
+<section id="id3">
+<h2>终端<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
+<p>命令行一般需使用终端（Terminal）输入指令。日常使用的终端更确切的称谓应该是终端模拟器（Terminal Emulator）。用户可以在桌面或菜单栏中找到并点击“Terminal” 图标以启动终端，然后输入命令并按下 <kbd class="kbd docutils literal notranslate">Enter</kbd> 键即可执行相应的命令:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># 使用 echo 命令输出 Hello World~
+$ echo &quot;Hello World~&quot;
+
+# 使用 exit 命令退出终端
+$ exit
+</pre></div>
+</div>
+</section>
+<section id="shell">
+<h2>Shell<a class="headerlink" href="#shell" title="永久链接至标题"></a></h2>
+<p>从终端程序输入的指令，会被一个称为 Shell（壳）的程序接收，并进一步交给系统执行。几乎所有的 Linux 发行版都提供了一个叫 Bash 的 Shell，此外还有 Zsh、csh、ksh 等 Shell。熟悉 Linux 系统之后，推荐参考<a class="reference external" href="https://seismo-learn.org/seismology101/best-practices/zsh/" title="(在 地震“学”科研入门教程)"><span class="xref std std-doc">《Zsh 及其配置实践经验》</span></a>安装和使用 Zsh。</p>
+<p>打开终端后，通常会看到类似如下 Shell 提示符:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[seismo-learn@earth ~] $
+</pre></div>
+</div>
+<p>上例中的提示符由 seismo-learn（用户名）、&#64; 符号、earth（主机名）、~（表示家目录）以及 $ 美元符号组成。在不同的 Linux 发行版或不同的用户设置下，该提示符的样式有所不同。</p>
+<p>接着就可以在终端中输入各种命令，Shell 会获取命令并交给系统执行:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># 查看 Shell 变量，即当前 Shell 程序的名字
+[seismo-learn@earth ~] $ echo $SHELL
+/bin/bash
+</pre></div>
+</div>
+<p>为了简洁，本教程中的所有命令行只使用 <code class="docutils literal notranslate"><span class="pre">$</span></code> 符号表示 Shell 提示符。因而上面的示例在本教程中会写作:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># 查看 Shell 变量，即当前 Shell 程序的名字
+$ echo $SHELL
+/bin/bash
+</pre></div>
+</div>
+<p>其中，以 <code class="docutils literal notranslate"><span class="pre">#</span></code> 符号开头的行为注释行，用于解释接下来的命令，用户无需输入。以 <code class="docutils literal notranslate"><span class="pre">$</span></code> 符号开头的行为命令行，用户需要在终端中键入该命令以执行。不以 <code class="docutils literal notranslate"><span class="pre">#</span></code> 符号和 <code class="docutils literal notranslate"><span class="pre">$</span></code> 符号开头的行，则为命令的输出信息（例如 <code class="docutils literal notranslate"><span class="pre">/bin/bash</span></code>）。</p>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<ol class="arabic simple">
+<li><p>使用向上、向下箭头按键可以获取之前输入的命令</p></li>
+<li><p>按住鼠标左键并拖动选中文本，或直接双击一个单词，就可以复制选中的文本或单词，随后按下鼠标中键，就可以将文本粘贴到光标所在的位置</p></li>
+<li><p>输入命令或路径时按下 <kbd class="kbd docutils literal notranslate">Tab</kbd> 键可自动补全</p></li>
+</ol>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../linux101/" class="btn btn-neutral float-left" title="Linux 入门" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../file-operations/" class="btn btn-neutral float-right" title="文件操作" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2020–2021, seismo-learn.
+      <span class="lastupdated">最后更新于 2021 年 10 月 03 日.
+      </span></p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">sphinx_rtd_theme 主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
